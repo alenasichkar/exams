@@ -1,0 +1,22 @@
+.footer {
+    padding: 75px 15px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__logo {
+        margin-bottom: 25px;
+    }
+    &__copyright {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: $gray;
+        letter-spacing: 0.05em;
+        margin-bottom: 35px;
+    }
+    &__social {
+        &--item {
+            margin-right: 7px;
+        }
+    }
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brandly</title>
+    <link rel="stylesheet" href="./styles/font-awesome.css">    
+    <link rel="stylesheet" href="./styles/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="./styles/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="./styles/slick.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <section id="home" class="main-screen">
+        <header class="header">
+            <div class="section__container header__container">
+                <a href="./index.html" class="header__logo">
+                    <span class="header__logo--part1">brand</span>
+                    <span class="header__logo--part2">ly</span>
+                </a>
+                <button id="menu" class="nav__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="header__nav">
+                    <ul class="header__nav--list">
+                        <li>
+                            <a href="#home" class="header__nav--item header__nav--item--active">home</a>
+                        </li>
+                        <li>
+                            <a href="#shop" class="header__nav--item">shop</a>
+                        </li>
+                        <li>
+                            <a href="#brands" class="header__nav--item">brands</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="header__nav--item">blog</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="header__nav--item">about</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="header__nav--item">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <p class="main-screen__subtitle">Spring / Summer Collection</p>
+        <p class="main-screen__title">UP TO 60% DISCOUNT ON NEW ARRIVALS</p>
+        <p class="main-screen__description">TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</p>
+        <button class="main-screen__btn">shop now</button>
+        <a href="#" class="scroll-down" address="true"></a>        
+    </section>
+
+    <section class="latest" id="shop">
+        <div class="section__container latest__container">
+            <p class="latest__title">latest products</p>
+            <div class="latest__collections">
+                <div class="latest__item latest__item--small">
+                    <img src="./img/latest-men.jpg" alt="">
+                    <div class="latest__item--overlay">
+                        <span class="latest__overlay--text">men</span>
+                    </div>
+                </div>
+                <div class="latest__item latest__item--small">
+                    <img src="./img/latest-women.jpg" alt="">
+                    <div class="latest__item--overlay">
+                        <span class="latest__overlay--text">women</span>
+                    </div>
+                </div>
+                <div class="latest__item latest__item--small">
+                    <img src="./img/latest-watches.jpg" alt="">
+                    <div class="latest__item--overlay">
+                        <span class="latest__overlay--text">watches</span>
+                    </div>
+                </div>
+                <div class="latest__item latest__item--large">
+                    <img src="./img/latest-new-collection.jpg" alt="">
+                    <div class="latest__item--overlay">
+                        <span class="latest__overlay--text-large">40% Off New Autumn Collection</span>
+                    </div>
+                </div>
+                <div class="latest__item latest__item--large">
+                    <img src="./img/latest-mega-sale.jpg" alt="">
+                    <div class="latest__item--overlay">
+                        <span class="latest__overlay--text-large">MEGA SALE ON ITEMS FROM SPIRIT COLLECTION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending" id="brands">
+        <div class="section__container trending__container">
+            <p class="trending__title">trending items</p>
+            <div id="trending__slider" class="trending__slider">
+                <div class="trending__slider--item">
+                    <div class="trending__slider--wrapper">
+                        <div class="trending__slider--img">
+                            <!-- <a href="./img/trending-slider-img-1.jpg" class="fancybox" id="single_1" title="NATHAN STEWART JACKET"> -->
+                                <img src="./img/trending-slider-img-1.jpg" alt="">
+                            <!-- </a> -->
+                        </div>
+                        <div class="trending__slider--content">
+                            <p class="trending__slider--title">NATHAN STEWART JACKET</p>
+                            <p class="trending__slider--subtitle">Summer/Autumn Collection</p>
+                            <p class="trending__slider--description">Classic Nathan Stewart Jacket from his latest collection.
+                                    This item is loved by many just because of it’s simle style.
+                                    Simple lines,lovely texture,it suits almost everybody. 
+                                    It comes in six different colors,and all sizes.</p>
+                                    
+                            <p class="trending__slider--description">FASHION TIP:
+                                    With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+                            <div class="trending__slider--sizes">
+                                <button class="slider__sizes--btn">m</button>
+                                <button class="slider__sizes--btn slider__sizes--btn--active">l</button>
+                                <button class="slider__sizes--btn">xl</button>
+                                <button class="slider__sizes--btn">xxl</button>
+                            </div>
+                            <div class="trending__slider--btn-group">
+                                <button>shop now</button>
+                                <button>size guide</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending__slider--item">
+                    <div class="trending__slider--wrapper">
+                        <div class="trending__slider--img">
+                            <img src="./img/trending-slider-img-2.jpg" alt="">
+                        </div>
+                        <div class="trending__slider--content">
+                            <p class="trending__slider--title">NATHAN STEWART JACKET</p>
+                            <p class="trending__slider--subtitle">Summer/Autumn Collection</p>
+                            <p class="trending__slider--description">Classic Nathan Stewart Jacket from his latest collection.
+                                    This item is loved by many just because of it’s simle style.
+                                    Simple lines,lovely texture,it suits almost everybody. 
+                                    It comes in six different colors,and all sizes.</p>
+                                    
+                            <p class="trending__slider--description">FASHION TIP:
+                                    With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+                            <div class="trending__slider--sizes">
+                                <button class="slider__sizes--btn">m</button>
+                                <button class="slider__sizes--btn slider__sizes--btn--active">l</button>
+                                <button class="slider__sizes--btn">xl</button>
+                                <button class="slider__sizes--btn">xxl</button>
+                            </div>
+                            <div class="trending__slider--btn-group">
+                                <button>shop now</button>
+                                <button>size guide</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending__slider--item">
+                    <div class="trending__slider--wrapper">
+                        <div class="trending__slider--img">
+                            <img src="./img/trending-slider-img-1.jpg" alt="">
+                        </div>
+                        <div class="trending__slider--content">
+                            <p class="trending__slider--title">NATHAN STEWART JACKET</p>
+                            <p class="trending__slider--subtitle">Summer/Autumn Collection</p>
+                            <p class="trending__slider--description">Classic Nathan Stewart Jacket from his latest collection.
+                                    This item is loved by many just because of it’s simle style.
+                                    Simple lines,lovely texture,it suits almost everybody. 
+                                    It comes in six different colors,and all sizes.</p>
+                                    
+                            <p class="trending__slider--description">FASHION TIP:
+                                    With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+                            <div class="trending__slider--sizes">
+                                <button class="slider__sizes--btn">m</button>
+                                <button class="slider__sizes--btn slider__sizes--btn--active">l</button>
+                                <button class="slider__sizes--btn">xl</button>
+                                <button class="slider__sizes--btn">xxl</button>
+                            </div>
+                            <div class="trending__slider--btn-group">
+                                <button>shop now</button>
+                                <button>size guide</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending__slider--item">
+                    <div class="trending__slider--wrapper">
+                        <div class="trending__slider--img">
+                            <img src="./img/trending-slider-img-2.jpg" alt="">
+                        </div>
+                        <div class="trending__slider--content">
+                            <p class="trending__slider--title">NATHAN STEWART JACKET</p>
+                            <p class="trending__slider--subtitle">Summer/Autumn Collection</p>
+                            <p class="trending__slider--description">Classic Nathan Stewart Jacket from his latest collection.
+                                    This item is loved by many just because of it’s simle style.
+                                    Simple lines,lovely texture,it suits almost everybody. 
+                                    It comes in six different colors,and all sizes.</p>
+                                    
+                            <p class="trending__slider--description">FASHION TIP:
+                                    With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+                            <div class="trending__slider--sizes">
+                                <button class="slider__sizes--btn">m</button>
+                                <button class="slider__sizes--btn slider__sizes--btn--active">l</button>
+                                <button class="slider__sizes--btn">xl</button>
+                                <button class="slider__sizes--btn">xxl</button>
+                            </div>
+                            <div class="trending__slider--btn-group">
+                                <button>shop now</button>
+                                <button>size guide</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="section__container blog__container">
+            <p class="blog__title">from the blog</p>
+            <div id="blog__slider" class="blog__slider">
+                <div class="blog__slider--item">
+                    <div class="blog__slider--img">
+                        <img src="./img/blog-slider-img-1.jpg" alt="">
+                        <div class="blog__slider--overlay">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog__slider--content">
+                        <p class="blog__slider--title">GERMAN FASHION WIZARDS</p>
+                        <p class="blog__slider--subtitle">By James Steed   |   Fashion</p>
+                        <p class="blog__slider--description">This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the 
+                                European fashion scene and this year at Paris Fashion Week they 
+                                introduced their new collection. </p>
+                        <button class="blog__slider--btn">read more</button>
+                    </div>
+                </div>
+                <div class="blog__slider--item">
+                    <div class="blog__slider--img">
+                        <img src="./img/blog-slider-img-2.jpg" alt="">
+                        <div class="blog__slider--overlay">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog__slider--content">
+                        <p class="blog__slider--title">ANNE STEWART’S SUNGLASSES</p>
+                        <p class="blog__slider--subtitle">By Marry Beard   |   Trending   </p>
+                        <p class="blog__slider--description">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+                        <button class="blog__slider--btn">read more</button>
+                    </div>
+                </div>
+                <div class="blog__slider--item">
+                    <div class="blog__slider--img">
+                        <img src="./img/blog-slider-img-1.jpg" alt="">
+                        <div class="blog__slider--overlay">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog__item--content">
+                        <p class="blog__slider--title">GERMAN FASHION WIZARDS</p>
+                        <p class="blog__slider--subtitle">By James Steed   |   Fashion</p>
+                        <p class="blog__slider--description">This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the 
+                                European fashion scene and this year at Paris Fashion Week they 
+                                introduced their new collection. </p>
+                        <button class="blog__slider--btn">read more</button>
+                    </div>
+                </div>
+                <div class="blog__slider--item">
+                    <div class="blog__slider--img">
+                        <img src="./img/blog-slider-img-2.jpg" alt="">
+                        <div class="blog__slider--overlay">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog__slider--content">
+                        <p class="blog__slider--title">ANNE STEWART’S SUNGLASSES</p>
+                        <p class="blog__slider--subtitle">By Marry Beard   |   Trending   </p>
+                        <p class="blog__slider--description">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+                        <button class="blog__slider--btn">read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe" id="contact">
+        <div class="section__container subscribe__container">
+            <p class="subscribe__title">SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS</p>
+            <form class="subscribe__form">
+                <input class="subscribe__form--email" type="email" placeholder="email adress">
+                <button class="subscribe__form--btn">subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__content">
+            <span>Made with</span>
+            <img src="./img/heart-icon.png" alt="heart">
+            <span>by WebDonut.net</span>
+        </p>
+    </footer>
+
+    <button id="button-up" class="button-up">
+        <span class="ion-chevron-up"></span>
+    </button>
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+    
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

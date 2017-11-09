@@ -1,0 +1,61 @@
+.testimonials {
+    background-color: $gray-bg;
+    &__container {
+        padding: 80px 15px 100px;
+    }
+    &__title {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: $dark-gray;
+        text-align: center;
+    }
+    &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        color: $gray;
+        text-align: center;
+    }
+    &__slider {
+        background-color: $white;
+        padding: 50px 100px 60px;
+        font-family: 'Open Sans', sans-serif;
+        &--wrapper {
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            position: relative;
+        }
+        &--content {
+            max-width: 745px;
+            font-weight: 400;
+        } 
+        &--text {
+            font-size: 16px;
+            color: $gray;
+            letter-spacing: 0.05em;
+            margin-bottom: 35px;
+            line-height: 1.5em;
+        }
+        &--name {
+            color: $green;
+            letter-spacing: 0.04em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        &--position {
+            color: $brown;
+            font-size: 14px;       
+            letter-spacing: 0.04em;     
+        }
+    }
+}

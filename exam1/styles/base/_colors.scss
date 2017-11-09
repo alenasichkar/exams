@@ -1,0 +1,17 @@
+$white: #fff;
+$gray: #81868e;
+$dark-gray: #333b46;
+$green: #19bd9a;
+$gray-bg: #f3f3f3;
+$brown: #464646;
+
+.clearfix {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear:both;
+    }
+}

@@ -1,0 +1,35 @@
+.footer {
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    &__content {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        color: $gray;
+    }
+}
+
+.button-up {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: $gray;
+    border: 1px solid $gray;
+    position: fixed;
+    bottom: 30px;
+    right: 55px;
+    font-size: 22px;
+    opacity: 0;
+    pointer-events: none;
+    @include transition(0.4s);
+    z-index: 10;
+}
+.button-up.is-visible {
+    opacity: 1;
+    pointer-events: auto; 
+}
+.button-up:hover {
+    border-color: $red;
+    color: $red; 
+}

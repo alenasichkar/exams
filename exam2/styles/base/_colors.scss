@@ -1,0 +1,19 @@
+$red: #dc0000;
+$white: #fff;
+$dark-gray: #323338;
+$brown: #333333;
+$gray: #878787;
+$gray-text: #777777;
+$black: #000000;
+$light-gray: #ecf0f1;
+
+.clearfix {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear:both;
+    }
+}

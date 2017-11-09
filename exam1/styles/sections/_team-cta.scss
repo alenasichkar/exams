@@ -1,0 +1,29 @@
+.team-cta {
+    background: url(./../img/team-cta-bg.png) no-repeat center;
+    padding: 55px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        letter-spacing: 0.04em;
+        color: $white;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__btn {
+        color: $white;
+        padding: 6px 25px;
+        border: 1px solid $white;
+        border-radius: 18px;
+        max-width: 150px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        text-transform: capitalize;
+        &:hover {
+            background-color: $white;
+            color: $dark-gray;
+        }
+    }
+}

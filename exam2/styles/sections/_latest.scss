@@ -1,0 +1,149 @@
+.latest{
+    background-color: $white;
+    &__container {
+        padding: 60px 15px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 40px;
+        color: $brown;
+        position: relative;
+        padding: 30px 0;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background-color: $red;
+            height: 2px;
+            width: 110px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            background-color: $red;
+            height: 2px;
+            width: 110px;
+        }
+    }
+    &__collections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-bottom: 30px;
+        position: relative;
+        cursor: pointer;
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+        &--small {
+            width: calc((100% - 60px)/3);
+            @media (max-width: 580px) {
+                width: 100%;
+            }
+        }
+        &--large {
+            width: calc((100% - 30px)/2);  
+            @media (max-width: 580px) {
+                width: 100%;
+            }          
+        }
+        &--overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(90, 92, 102, 0.7);
+            padding: 30px;
+            display: none;
+            opacity: 0;
+            @include transition(0.4s);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            @media (max-width: 750px) {
+                padding: 15px;
+            }
+            @media (max-width: 580px) {
+                padding: 30px;
+            }
+        }
+        &:hover .latest__item--overlay {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    &__overlay {
+        &--text {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 40px;
+            text-transform: capitalize;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $white;
+            @media (max-width: 840px) {
+                font-size: 30px;
+            }
+            &-large {
+                font-family: 'Lato', sans-serif;
+                font-weight: 900;
+                font-size: 45px;
+                color: $white;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                @media (max-width: 840px) {
+                    font-size: 35px;
+                }
+                @media (max-width: 580px) {
+                    font-size: 28px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                    background-color: $white;
+                    height: 1px;
+                    width: 190px;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    background-color: $white;
+                    height: 1px;
+                    width: 190px;
+                }
+            }
+        }
+    }
+}

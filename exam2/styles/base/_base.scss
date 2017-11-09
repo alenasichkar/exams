@@ -1,0 +1,64 @@
+body {
+    min-width: 320px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    overflow-x: hidden;
+    &.hidden {
+        overflow: hidden;
+    }
+  }
+  
+  input {
+    required: valid;
+    outline: none;
+    @include transition(0.5s);
+    &:focus {
+        required: invalid;
+    }
+  }
+  
+  textarea {
+    required: valid;
+    &:focus {
+      required: invalid;
+    }
+  }
+  
+  button,
+  input[type='submit'] {
+    cursor: pointer;
+    @include transition(0.5s);
+    background: transparent;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(0.5s);
+    &:hover {
+        text-decoration: none;
+    }
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  main {
+    background: #ececec;
+  }
+  
+  
+  .section__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
