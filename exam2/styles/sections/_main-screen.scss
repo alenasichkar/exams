@@ -78,8 +78,9 @@
     padding: 30px 0;
     &--fixed {
         position: fixed;
-        background: rgba(182, 182, 182, 0.48);
-        padding: 10px 30px;
+        background: rgba(182, 182, 182, 0.623);
+        // padding: 10px 30px;
+        padding: 10px 0;        
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         z-index: 10;
     }    
@@ -153,7 +154,7 @@
             &.header__nav--open {
                 display: block;
                 width: 100%;
-                background: rgba(182, 182, 182, 0.48);
+                background: rgba(182, 182, 182, .623);
             }
         }
     }

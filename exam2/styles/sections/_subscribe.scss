@@ -24,7 +24,7 @@
             width: 770px;
             padding: 20px 20px 20px 80px;
             background-color: transparent;
-            background: url(./../img/email-icon.png) 30px no-repeat;
+            background: url(./../img/email-icon.png) 30px center no-repeat;
             color: $white;
             border: 1px solid $white;
             margin-right: 30px;
@@ -36,7 +36,7 @@
                 margin: 0 0 30px;
             }
             @media (max-width: 350px) {
-                width: 270px;
+                width: 260px;
                 margin: 0 auto 30px;
             }
         }
@@ -57,7 +57,7 @@
                 height: 47px;
             }
             @media (max-width: 350px) {
-                width: 270px;
+                width: 260px;
                 margin: 0 auto;
             }
             &:hover {

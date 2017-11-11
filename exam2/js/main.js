@@ -22,7 +22,7 @@ $(document).ready(function(){
         autoplay: true,
         arrows: false,
         autoplaySpeed: 4000,
-        fade: true,
+        fade: true
     });
     $('#blog__slider').slick({
         // dots: true,
@@ -31,6 +31,7 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        // arrows: false,
         prevArrow: '<button type="button" class="blog__slider-arrow blog__slider-arrow--prev"><span class="ion-chevron-left"></span></button>',
         nextArrow: '<button type="button" class="blog__slider-arrow blog__slider-arrow--next"><span class="ion-chevron-right"></span></button>',
         autoplay: true,
@@ -46,7 +47,8 @@ $(document).ready(function(){
             
                   breakpoint: 768,
                   settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                   }
             
                 }]

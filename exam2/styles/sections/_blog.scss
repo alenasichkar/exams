@@ -1,6 +1,9 @@
 .blog {
     &__container {
         padding: 60px 15px;
+        @media (max-width: 670px) {
+            padding: 40px 15px;
+        }
     }
     &__title {
         font-family: 'Open Sans', sans-serif;
@@ -13,6 +16,15 @@
         text-transform: capitalize;
         margin-bottom: 60px;
         text-align: center;
+        @media (max-width: 890px) {
+            font-size: 36px;
+            padding: 25px 0;
+        }
+        @media (max-width: 670px) {
+            font-size: 34px;
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
         &:before {
             content: '';
             position: absolute;
